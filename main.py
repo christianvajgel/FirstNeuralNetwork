@@ -29,7 +29,7 @@ layer2 = layers.Dense(10, activation='softmax')
 network.add(layer2)
 
 # Compile network
-# Involve: Choose the optimization function, choose the loss function, choose metrics
+# Step-by-step: Choose the optimization function, choose the loss function, choose metrics
 network.compile(optimizer='rmsprop', loss='categorical_crossentropy', metrics=['accuracy'])
 
 train_images = train_images.reshape((60000, 28 * 28))
